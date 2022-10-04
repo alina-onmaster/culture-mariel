@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Название страницы</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+  <body class="page page--index">
+    <div style="display:none">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow" viewBox="0 0 28 18">
+<path class="icon__color-element" fill-rule="evenodd" clip-rule="evenodd" d="M0.875 8.99996C0.875 8.75132 0.973772 8.51287 1.14959 8.33705C1.3254 8.16124 1.56386 8.06246 1.8125 8.06246H23.9244L18.0238 2.16371C17.8477 1.98768 17.7488 1.74892 17.7488 1.49996C17.7488 1.25101 17.8477 1.01225 18.0238 0.836213C18.1998 0.660176 18.4385 0.561279 18.6875 0.561279C18.9365 0.561279 19.1752 0.660176 19.3513 0.836213L26.8513 8.33621C26.9386 8.4233 27.0078 8.52675 27.0551 8.64065C27.1024 8.75455 27.1267 8.87665 27.1267 8.99996C27.1267 9.12328 27.1024 9.24538 27.0551 9.35928C27.0078 9.47317 26.9386 9.57663 26.8513 9.66371L19.3513 17.1637C19.1752 17.3398 18.9365 17.4386 18.6875 17.4386C18.4385 17.4386 18.1998 17.3398 18.0238 17.1637C17.8477 16.9877 17.7488 16.7489 17.7488 16.5C17.7488 16.251 17.8477 16.0122 18.0238 15.8362L23.9244 9.93746H1.8125C1.56386 9.93746 1.3254 9.83869 1.14959 9.66288C0.973772 9.48706 0.875 9.2486 0.875 8.99996Z" fill="#000000"></path>
+</symbol><symbol id="icon-vk" viewBox="0 0 16 10">
+<path class="icon__color-element" fill-rule="evenodd" clip-rule="evenodd" d="M15.6333 0.965496C15.744 0.601496 15.6333 0.333496 15.1033 0.333496H13.3533C12.908 0.333496 12.7027 0.564829 12.5913 0.820163C12.5913 0.820163 11.7013 2.95083 10.4407 4.33483C10.0327 4.73616 9.84733 4.8635 9.62467 4.8635C9.51333 4.8635 9.346 4.73616 9.346 4.3715V0.965496C9.346 0.528163 9.22333 0.333496 8.85267 0.333496H6.10067C5.82267 0.333496 5.65533 0.536163 5.65533 0.728829C5.65533 1.14283 6.286 1.23883 6.35067 2.40416V4.93616C6.35067 5.4915 6.24867 5.59216 6.026 5.59216C5.43267 5.59216 3.98933 3.4515 3.13267 1.00216C2.96667 0.525496 2.79867 0.333496 2.35133 0.333496H0.6C0.1 0.333496 0 0.564829 0 0.820163C0 1.27483 0.593333 3.5335 2.76333 6.52083C4.21 8.56083 6.24667 9.66683 8.102 9.66683C9.21467 9.66683 9.352 9.4215 9.352 8.99816V7.45616C9.352 6.96483 9.45733 6.86683 9.81 6.86683C10.07 6.86683 10.5147 6.99483 11.5533 7.97816C12.74 9.14416 12.9353 9.66683 13.6033 9.66683H15.3533C15.8533 9.66683 16.104 9.4215 15.96 8.93616C15.8013 8.4535 15.2347 7.75283 14.4833 6.9215C14.0753 6.44816 13.4633 5.93816 13.2773 5.68283C13.018 5.3555 13.092 5.2095 13.2773 4.91816C13.2773 4.91816 15.4107 1.9675 15.6327 0.965496H15.6333Z" fill="#000000"></path>
+</symbol><symbol id="icon-youtube" viewBox="0 0 16 12">
+<path class="icon__color-element" d="M15.6667 2.33821C15.5761 2.01503 15.3996 1.72244 15.156 1.49155C14.9056 1.25355 14.5986 1.0833 14.264 0.99688C13.012 0.66688 7.99605 0.66688 7.99605 0.66688C5.90493 0.643089 3.81433 0.74773 1.73605 0.980213C1.40151 1.07302 1.09509 1.24707 0.844045 1.48688C0.597379 1.72421 0.418712 2.01688 0.325379 2.33755C0.101174 3.54538 -0.00776008 4.77178 4.52446e-05 6.00021C-0.00795476 7.22755 0.100712 8.45355 0.325379 9.66288C0.416712 9.98221 0.594712 10.2735 0.842045 10.5089C1.08938 10.7442 1.39738 10.9142 1.73605 11.0042C3.00471 11.3335 7.99605 11.3335 7.99605 11.3335C10.0898 11.3574 12.1831 11.2527 14.264 11.0202C14.5986 10.9338 14.9056 10.7635 15.156 10.5255C15.3996 10.2947 15.5758 10.0021 15.666 9.67888C15.8961 8.47152 16.008 7.24461 16 6.01555C16.0173 4.78128 15.9056 3.54859 15.6667 2.33755V2.33821ZM6.40138 8.28288V3.71821L10.5747 6.00088L6.40138 8.28288Z" fill="#000000"></path>
+</symbol></svg>
+    </div>
+    <header class="main-header">
+  <div class="main-header__nav">
+    <nav class="main-nav">
+  <p class="logo">Культура <span>Марий Эл</span></p>
+
+  <button class="burger-button" type="button" aria-label="Открыть меню">
+  <span></span>
+</button>
+
+  <nav class="site-nav" role="navigation">
+  <ul class="site-nav__list">
+    <li>
+      <a href="inner.html">Главная</a>
+    </li>
+    <li>
+      <a href="#!">Куда сходить</a>
+    </li>
+    <li>
+      <a href="#!">От первого лица</a>
+    </li>
+    <li>
+      <a href="#!">Спецпроекты</a>
+    </li>
+    <li>
+      <a href="#!">Я здесь: Марий Эл</a>
+    </li>
+  </ul>
+</nav>
+
+</nav>
+
+  </div>
+
+</header>
+
+    <main>
+      <section class="intro">
+  <div class="intro__image-col">
+    <div class="intro__image-col-wrap">
+      <section class="swiper main-slider">
+  <ul class="swiper-wrapper main-slider__list">
+    <li class="swiper-slide main-slider__item">
+      <a href="#!">
+        <div class="main-slider__img-wrap">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/main-slider/slide1-990@1x.webp 1x,
+            ./img/main-slider/slide1-990@2x.webp 2x,
+            ./img/main-slider/slide1-990@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/main-slider/slide1-990@1x.jpg 1x,
+            ./img/main-slider/slide1-990@2x.jpg 2x,
+            ./img/main-slider/slide1-990@3x.jpg 3x">
+            <img src="./img/main-slider/slide1.jpg" alt="Марийский орнамент">
+          </picture>
+        </div>
+        <h2 class="main-slider__item-title">Марийский орнамент</h2>
+      </a>
+    </li>
+    <li class="swiper-slide main-slider__item">
+      <a href="#!">
+        <div class="main-slider__img-wrap">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/main-slider/slide1-990@1x.webp 1x,
+            ./img/main-slider/slide1-990@2x.webp 2x,
+            ./img/main-slider/slide1-990@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/main-slider/slide1-990@1x.jpg 1x,
+            ./img/main-slider/slide1-990@2x.jpg 2x,
+            ./img/main-slider/slide1-990@3x.jpg 3x">
+            <img src="./img/main-slider/slide1.jpg" alt="Марийский орнамент">
+          </picture>
+        </div>
+        <h2 class="main-slider__item-title">Марийский орнамент</h2>
+      </a>
+    </li>
+    <li class="swiper-slide main-slider__item">
+      <a href="#!">
+        <div class="main-slider__img-wrap">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/main-slider/slide1-990@1x.webp 1x,
+            ./img/main-slider/slide1-990@2x.webp 2x,
+            ./img/main-slider/slide1-990@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/main-slider/slide1-990@1x.jpg 1x,
+            ./img/main-slider/slide1-990@2x.jpg 2x,
+            ./img/main-slider/slide1-990@3x.jpg 3x">
+            <img src="./img/main-slider/slide1.jpg" alt="Марийский орнамент">
+          </picture>
+        </div>
+        <h2 class="main-slider__item-title">Марийский орнамент</h2>
+      </a>
+    </li>
+  </ul>
+  <div class="swiper-pagination"></div>
+</section>
+
+    </div>
+  </div>
+  <div class="intro__text-col">
+    <div class="intro__text-col-wrap">
+      <p class="logo">Культура <span>Марий Эл</span></p>
+
+      <p>Анонсы, интервью, все самое актуальное о культурной жизни Республики</p>
+    </div>
+  </div>
+</section>
+
+      <section class="brands page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle brands__title" data-foo="Культурные бренды">Культурные бренды</h2>
+    <p class="brands__text">Откройте для себя уникальные достопримечтальности нашего региона</p>
+    <ul class="brands__list">
+      <li class="brands__item brand">
+        <a class="brands__item-link" href="#!">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/brands/castle-fs-330@1x.webp 1x,
+            ./img/brands/castle-fs-330@2x.webp 2x,
+            ./img/brands/castle-fs-330@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/brands/castle-fs-330@1x.png 1x,
+            ./img/brands/castle-fs-330@2x.png 2x,
+            ./img/brands/castle-fs-330@3x.png 3x">
+            <img class="brand__img" src="./img/brands/castle-fs.png" alt="Замок Шереметева">
+          </picture>
+          <h3 class="brand__title">Замок Шереметева</h3>
+        </a>
+      </li>
+      <li class="brands__item brand">
+        <a class="brands__item-link" href="#!">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/brands/apostols-fs-330@1x.webp 1x,
+            ./img/brands/apostols-fs-330@2x.webp 2x,
+            ./img/brands/apostols-fs-330@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/brands/apostols-fs-330@1x.png 1x,
+            ./img/brands/apostols-fs-330@2x.png 2x,
+            ./img/brands/apostols-fs-330@3x.png 3x">
+            <img class="brand__img" src="./img/brands/apostols-fs.png" alt="12 апостолов">
+          </picture>
+          <h3 class="brand__title">12 апостолов</h3>
+        </a>
+      </li>
+      <li class="brands__item brand">
+        <a class="brands__item-link" href="#!">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/brands/balet-fs-330@1x.webp 1x,
+            ./img/brands/balet-fs-330@2x.webp 2x,
+            ./img/brands/balet-fs-330@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/brands/balet-fs-330@1x.png 1x,
+            ./img/brands/balet-fs-330@2x.png 2x,
+            ./img/brands/balet-fs-330@3x.png 3x">
+            <img class="brand__img" src="./img/brands/balet-fs.png" alt="Балет">
+          </picture>
+          <h3 class="brand__title">Балет</h3>
+        </a>
+      </li>
+      <li class="brands__item brand">
+        <a class="brands__item-link" href="#!">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/brands/embroidery-fs-330@1x.webp 1x,
+            ./img/brands/embroidery-fs-330@2x.webp 2x,
+            ./img/brands/embroidery-fs-330@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/brands/embroidery-fs-330@1x.png 1x,
+            ./img/brands/embroidery-fs-330@2x.png 2x,
+            ./img/brands/embroidery-fs-330@3x.png 3x">
+            <img class="brand__img" src="./img/brands/embroidery-fs.png" alt="Марийская вышивка">
+          </picture>
+          <h3 class="brand__title">марийская вышивка</h3>
+        </a>
+      </li>
+      <li class="brands__item brand">
+        <a class="brands__item-link" href="#!">
+          <picture>
+            <source type="image/webp" srcset="
+            ./img/brands/harp2-fs-330@1x.webp 1x,
+            ./img/brands/harp2-fs-330@2x.webp 2x,
+            ./img/brands/harp2-fs-330@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+            ./img/brands/harp2-fs-330@1x.png 1x,
+            ./img/brands/harp2-fs-330@2x.png 2x,
+            ./img/brands/harp2-fs-330@3x.png 3x">
+            <img class="brand__img" src="./img/brands/harp2-fs.png" alt="Марийские гусли">
+          </picture>
+          <h3 class="brand__title">марийские гусли</h3>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="events articles page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle" data-foo="куда сходить?">куда сходить?</h2>
+    <ul class="articles__list">
+      <li class="articles__item articles__item--main article">
+        <a class="articles__item-link" href="#!">
+          <div class="article__img-wrap">
+            <picture>
+              <source type="image/webp" srcset="
+            ./img/events/image1-840@1x.webp 1x,
+            ./img/events/image1-840@2x.webp 2x,
+            ./img/events/image1-840@3x.webp 3x">
+              <source type="image/jpeg" srcset="
+            ./img/events/image1-840@1x.jpg 1x,
+            ./img/events/image1-840@2x.jpg 2x,
+            ./img/events/image1-840@3x.jpg 3x">
+              <img class="brand__img" src="./img/events/image1.jpg" alt="Спектакль “Югорно”">
+            </picture>
+            <div class="article__info">
+              <p class="article__type">Театры</p>
+              <p class="article__date">22.06.2022</p>
+            </div>
+          </div>
+          <h3 class="article__title">Спектакль “Югорно”</h3>
+        </a>
+      </li>
+      <li class="articles__item article">
+        <a class="articles__item-link" href="#!">
+          <div class="article__img-wrap">
+            <picture>
+              <source type="image/webp" srcset="
+            ./img/events/image2-840@1x.webp 1x,
+            ./img/events/image2-840@2x.webp 2x,
+            ./img/events/image2-840@3x.webp 3x">
+              <source type="image/jpeg" srcset="
+            ./img/events/image2-840@1x.jpg 1x,
+            ./img/events/image2-840@2x.jpg 2x,
+            ./img/events/image2-840@3x.jpg 3x">
+              <img src="./img/events/image2.jpg" alt="ReQuizit">
+            </picture>
+            <div class="article__info">
+              <p class="article__type">Интеллектуальная игра</p>
+              <p class="article__date">22.06.2022</p>
+            </div>
+          </div>
+          <h3 class="article__title">ReQuizit</h3>
+        </a>
+      </li>
+      <li class="articles__item article">
+        <a class="articles__item-link" href="#!">
+          <div class="article__img-wrap">
+            <picture>
+              <source type="image/webp" srcset="
+            ./img/events/image3-840@1x.webp 1x,
+            ./img/events/image3-840@2x.webp 2x,
+            ./img/events/image3-840@3x.webp 3x">
+              <source type="image/jpeg" srcset="
+            ./img/events/image3-840@1x.jpg 1x,
+            ./img/events/image3-840@2x.jpg 2x,
+            ./img/events/image3-840@3x.jpg 3x">
+              <img class="brand__img" src="./img/events/image3.jpg" alt="Выставка одного шедевра">
+            </picture>
+            <div class="article__info">
+              <p class="article__type">Выставки</p>
+              <p class="article__date">22.06.2022</p>
+            </div>
+          </div>
+          <h3 class="article__title">Выставка одного шедевра</h3>
+        </a>
+      </li>
+      <li class="articles__item article">
+        <a class="articles__item-link" href="#!">
+          <div class="article__img-wrap">
+            <picture>
+              <source type="image/webp" srcset="
+            ./img/events/image4-840@1x.webp 1x,
+            ./img/events/image4-840@2x.webp 2x,
+            ./img/events/image4-840@3x.webp 3x">
+              <source type="image/jpeg" srcset="
+            ./img/events/image4-840@1x.jpg 1x,
+            ./img/events/image4-840@2x.jpg 2x,
+            ./img/events/image4-840@3x.jpg 3x">
+              <img class="brand__img" src="./img/events/image4.jpg" alt="Готическая симфония">
+            </picture>
+            <div class="article__info">
+              <p class="article__type">Концерт</p>
+              <p class="article__date">22.06.2022</p>
+            </div>
+          </div>
+          <h3 class="article__title">Готическая симфония</h3>
+        </a>
+      </li>
+      <li class="articles__item article">
+        <a class="articles__item-link" href="#!">
+          <div class="article__img-wrap">
+            <picture>
+              <source type="image/webp" srcset="
+            ./img/events/image5-840@1x.webp 1x,
+            ./img/events/image5-840@2x.webp 2x,
+            ./img/events/image5-840@3x.webp 3x">
+              <source type="image/jpeg" srcset="
+            ./img/events/image5-840@1x.jpg 1x,
+            ./img/events/image5-840@2x.jpg 2x,
+            ./img/events/image5-840@3x.jpg 3x">
+              <img class="brand__img" src="./img/events/image5.jpg" alt="День молодежи">
+            </picture>
+            <div class="article__info">
+              <p class="article__type">шоу</p>
+              <p class="article__date">22.06.2022</p>
+            </div>
+          </div>
+          <h3 class="article__title">День молодежи</h3>
+        </a>
+      </li>
+    </ul>
+    <p class="page__link-more"><a href="#!">Посмотреть всё</a></p>
+  </div>
+</section>
+
+      <section class="projects page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle" data-foo="Спецпроекты">Спецпроекты</h2>
+    <div class="projects__slider-wrap">
+      <div class="swiper projects__swiper">
+        <ul class="swiper-wrapper projects__list">
+          <li class="swiper-slide projects__item project">
+            <a class="projects__item-link" href="#!">
+              <div class="projects__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/projects/image1-690@1x.webp 1x,
+                    ./img/projects/image1-690@2x.webp 2x,
+                    ./img/projects/image1-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/projects/image1-690@1x.jpg 1x,
+                    ./img/projects/image1-690@2x.jpg 2x,
+                    ./img/projects/image1-690@3x.jpg 3x">
+                  <img src="./img/projects/image1.jpg" alt="Наследие. Традиции">
+                </picture>
+                <h3 class="project__title">Наследие. Традиции</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide projects__item project">
+            <a class="projects__item-link" href="#!">
+              <div class="projects__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/projects/image2-690@1x.webp 1x,
+                    ./img/projects/image2-690@2x.webp 2x,
+                    ./img/projects/image2-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/projects/image2-690@1x.jpg 1x,
+                    ./img/projects/image2-690@2x.jpg 2x,
+                    ./img/projects/image2-690@3x.jpg 3x">
+                  <img class="brand__img" src="./img/projects/image2.jpg" alt="Гуманитарные науки">
+                </picture>
+                <h3 class="project__title">Гуманитарные науки</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide projects__item project">
+            <a class="projects__item-link" href="#!">
+              <div class="projects__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/projects/image3-690@1x.webp 1x,
+                    ./img/projects/image3-690@2x.webp 2x,
+                    ./img/projects/image3-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/projects/image3-690@1x.jpg 1x,
+                    ./img/projects/image3-690@2x.jpg 2x,
+                    ./img/projects/image3-690@3x.jpg 3x">
+                  <img class="brand__img" src="./img/projects/image3.jpg" alt="Гостеприимство">
+                </picture>
+                <h3 class="project__title">Гостеприимство</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide projects__item project">
+            <a class="projects__item-link" href="#!">
+              <div class="projects__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/projects/image4-690@1x.webp 1x,
+                    ./img/projects/image4-690@2x.webp 2x,
+                    ./img/projects/image4-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/projects/image4-690@1x.jpg 1x,
+                    ./img/projects/image4-690@2x.jpg 2x,
+                    ./img/projects/image4-690@3x.jpg 3x">
+                  <img class="brand__img" src="./img/projects/image4.jpg" alt="Креативные индустрии">
+                </picture>
+                <h3 class="project__title">Креативные индустрии</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide projects__item project">
+            <a class="projects__item-link" href="#!">
+              <div class="projects__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/projects/image5-690@1x.webp 1x,
+                    ./img/projects/image5-690@2x.webp 2x,
+                    ./img/projects/image5-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/projects/image5-690@1x.jpg 1x,
+                    ./img/projects/image5-690@2x.jpg 2x,
+                    ./img/projects/image5-690@3x.jpg 3x">
+                  <img class="brand__img" src="./img/projects/image5.jpg" alt="Искусство">
+                </picture>
+                <h3 class="project__title">Искусство</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide projects__item project">
+            <a class="projects__item-link" href="#!">
+              <div class="projects__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/projects/image6-690@1x.webp 1x,
+                    ./img/projects/image6-690@2x.webp 2x,
+                    ./img/projects/image6-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/projects/image6-690@1x.jpg 1x,
+                    ./img/projects/image6-690@2x.jpg 2x,
+                    ./img/projects/image6-690@3x.jpg 3x">
+                  <img class="brand__img" src="./img/projects/image6.jpg" alt="Образование в культуре">
+                </picture>
+                <h3 class="project__title">Образование в культуре</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide projects__item project">
+            <a class="projects__item-link" href="#!">
+              <div class="projects__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/projects/image7-690@1x.webp 1x,
+                    ./img/projects/image7-690@2x.webp 2x,
+                    ./img/projects/image7-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/projects/image7-690@1x.jpg 1x,
+                    ./img/projects/image7-690@2x.jpg 2x,
+                    ./img/projects/image7-690@3x.jpg 3x">
+                  <img class="brand__img" src="./img/projects/image7.jpg" alt="Добровольчество">
+                </picture>
+                <h3 class="project__title">Добровольчество</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="projects__btn-next swiper-button-next">
+        <svg class="icon" width="28px" height="18px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+      <div class="projects__btn-prev swiper-button-prev">
+        <svg class="icon" width="28px" height="18px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <p class="page__link-more"><a href="#!">Посмотреть всё</a></p>
+  </div>
+</section>
+
+      <section class="first-person page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle" data-foo="От первого лица">От первого лица</h2>
+    <ul class="articles__list">
+      <li class="articles__item articles__item--main article">
+        <a class="articles__item-link" href="#!">
+          <div class="article__img-wrap">
+            <picture>
+              <source type="image/webp" srcset="
+                    ./img/first-person/image1-1700@1x.webp 1x,
+                    ./img/first-person/image1-1700@2x.webp 2x,
+                    ./img/first-person/image1-1700@3x.webp 3x">
+              <source type="image/jpeg" srcset="
+                    ./img/first-person/image1-1700@1x.jpg 1x,
+                    ./img/first-person/image1-1700@2x.jpg 2x,
+                    ./img/first-person/image1-1700@3x.jpg 3x">
+              <img src="./img/first-person/image1.jpg" alt="Опережая время">
+            </picture>
+            <div class="article__info">
+              <p class="article__type">Личный блог</p>
+              <p class="article__date">22.06.2022</p>
+            </div>
+          </div>
+          <h3 class="article__title">Опережая время</h3>
+        </a>
+      </li>
+    </ul>
+    <p class="page__link-more"><a href="#!">Посмотреть всё</a></p>
+  </div>
+</section>
+
+      <section class="team page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle" data-foo="Команда культуры">Команда культуры</h2>
+    <div class="team__slider-wrap">
+      <div class="swiper team__swiper">
+        <ul class="swiper-wrapper team__list">
+          <li class="swiper-slide team__item">
+            <a class="team__item-link" href="#!">
+              <div class="team__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/team/national-library-of-mariel-400@1x.webp 1x,
+                    ./img/team/national-library-of-mariel-400@2x.webp 2x,
+                    ./img/team/national-library-of-mariel-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/team/national-library-of-mariel-400@1x.png 1x,
+                    ./img/team/national-library-of-mariel-400@2x.png 2x,
+                    ./img/team/national-library-of-mariel-400@3x.png 3x">
+                  <img src="./img/team/national-library-of-mariel.png" alt="Национальная библиотека Марий Эл">
+                </picture>
+                <h3 class="visually-hidden">Национальная библиотека Марий Эл</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide team__item">
+            <a class="team__item-link" href="#!">
+              <div class="team__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/team/evseev-museum-400@1x.webp 1x,
+                    ./img/team/evseev-museum-400@2x.webp 2x,
+                    ./img/team/evseev-museum-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/team/evseev-museum-400@1x.png 1x,
+                    ./img/team/evseev-museum-400@2x.png 2x,
+                    ./img/team/evseev-museum-400@3x.png 3x">
+                  <img src="./img/team/evseev-museum.png" alt="Национальный музей Марий Эл имени Евсеева">
+                </picture>
+                <h3 class="visually-hidden">Национальный музей Марий Эл имени Евсеева</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide team__item">
+            <a class="team__item-link" href="#!">
+              <div class="team__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/team/sheremetiev-castle-400@1x.webp 1x,
+                    ./img/team/sheremetiev-castle-400@2x.webp 2x,
+                    ./img/team/sheremetiev-castle-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/team/sheremetiev-castle-400@1x.png 1x,
+                    ./img/team/sheremetiev-castle-400@2x.png 2x,
+                    ./img/team/sheremetiev-castle-400@3x.png 3x">
+                  <img src="./img/team/sheremetiev-castle.png" alt="Замок Шереметьева">
+                </picture>
+                <h3 class="visually-hidden">Замок Шереметьева</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide team__item">
+            <a class="team__item-link" href="#!">
+              <div class="team__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/team/palantai-culture-college-400@1x.webp 1x,
+                    ./img/team/palantai-culture-college-400@2x.webp 2x,
+                    ./img/team/palantai-culture-college-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/team/palantai-culture-college-400@1x.png 1x,
+                    ./img/team/palantai-culture-college-400@2x.png 2x,
+                    ./img/team/palantai-culture-college-400@3x.png 3x">
+                  <img src="./img/team/palantai-culture-college.png" alt="Колледж культуры и искусств имени Палантая">
+                </picture>
+                <h3 class="visually-hidden">Колледж культуры и искусств имени Палантая</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="team__btn-next swiper-button-next">
+        <svg class="icon" width="28px" height="18px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+      <div class="team__btn-prev swiper-button-prev">
+        <svg class="icon" width="28px" height="18px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <p class="page__link-more"><a href="#!">Посмотреть всё</a></p>
+  </div>
+</section>
+
+      <section class="app page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle" data-foo="Я здесь: Марий Эл">Я здесь: Марий Эл</h2>
+    <div class="app__column-wrap">
+      <div class="app__column-content">
+        <div class="app__header">
+          <img class="app__logo" src="./img/app/logo.png" width="60" height="60">
+          <p class="app__name">Мобильное приложение <b>Я здесь: Марий Эл</b></p>
+        </div>
+        <p class="app__about">Гид для гостей и жителей республики. Путешествуйте, не сидите дома! </p>
+        <div class="app__btn-wrap">
+          <a class="app__btn-download app__btn-download--ios"><span class="visually-hidden">Скачать приложение с App Store</span></a>
+          <a class="app__btn-download app__btn-download--android"><span class="visually-hidden">Скачать приложение с Google Play</span></a>
+        </div>
+      </div>
+      <div class="app__column-img">
+        <picture>
+          <source type="image/webp" srcset="
+                    ./img/app/route-945@1x.webp 1x,
+                    ./img/app/route-945@2x.webp 2x,
+                    ./img/app/route-945@3x.webp 3x">
+          <source type="image/jpeg" srcset="
+                    ./img/app/route-945@1x.png 1x,
+                    ./img/app/route-945@2x.png 2x,
+                    ./img/app/route-945@3x.png 3x">
+          <img class="app__img app__img--route" src="./img/app/route.png">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="
+                    ./img/app/smrt2-415@1x.webp 1x,
+                    ./img/app/smrt2-415@2x.webp 2x,
+                    ./img/app/smrt2-415@3x.webp 3x">
+          <source type="image/jpeg" srcset="
+                    ./img/app/smrt2-415@1x.png 1x,
+                    ./img/app/smrt2-415@2x.png 2x,
+                    ./img/app/smrt2-415@3x.png 3x">
+          <img class="app__img app__img--smrt2" src="./img/app/smrt2.png">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="
+                    ./img/app/smrt1-390@1x.webp 1x,
+                    ./img/app/smrt1-390@2x.webp 2x,
+                    ./img/app/smrt1-390@3x.webp 3x">
+          <source type="image/jpeg" srcset="
+                    ./img/app/smrt1-390@1x.png 1x,
+                    ./img/app/smrt1-390@2x.png 2x,
+                    ./img/app/smrt1-390@3x.png 3x">
+          <img class="app__img app__img--smrt1" src="./img/app/smrt1.png">
+        </picture>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+      <section class="guide page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle" data-foo="Заповедная Марий Эл: твой гид">Заповедная Марий Эл: твой гид</h2>
+    <div class="guide__slider-wrap">
+      <div class="swiper guide__swiper">
+        <ul class="swiper-wrapper guide__list articles__list">
+          <li class="swiper-slide guide__item articles__item article">
+            <a class="articles__item-link" href="#!">
+              <div class="article__img-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/guide/image1-690@1x.webp 1x,
+                    ./img/guide/image1-690@2x.webp 2x,
+                    ./img/guide/image1-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/guide/image1-690@1x.png 1x,
+                    ./img/guide/image1-690@2x.png 2x,
+                    ./img/guide/image1-690@3x.png 3x">
+                  <img src="./img/guide/image1.png" alt="Серебряное озеро">
+                </picture>
+              </div>
+              <h3 class="article__title">Серебряное озеро</h3>
+              <p class="article__location">Звениговский район, 12 километров</p>
+            </a>
+          </li>
+          <li class="swiper-slide guide__item articles__item article">
+            <a class="articles__item-link" href="#!">
+              <div class="article__img-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/guide/image2-690@1x.webp 1x,
+                    ./img/guide/image2-690@2x.webp 2x,
+                    ./img/guide/image2-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/guide/image2-690@1x.png 1x,
+                    ./img/guide/image2-690@2x.png 2x,
+                    ./img/guide/image2-690@3x.png 3x">
+                </picture>
+                <img src="./img/guide/image2.png" width="280" height="220">
+              </div>
+              <h3 class="article__title">Динамическая скульптурная композиция «Вход Господень в Иерусалим»</h3>
+              <p class="article__location">г. Йошкар-Ола, Царьградский проспект, 37</p>
+            </a>
+          </li>
+          <li class="swiper-slide guide__item articles__item article">
+            <a class="articles__item-link" href="#!">
+              <div class="article__img-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/guide/image3-690@1x.webp 1x,
+                    ./img/guide/image3-690@2x.webp 2x,
+                    ./img/guide/image3-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/guide/image3-690@1x.png 1x,
+                    ./img/guide/image3-690@2x.png 2x,
+                    ./img/guide/image3-690@3x.png 3x">
+                  <img src="./img/guide/image3.png" alt="Гора Карман-Курык">
+                </picture>
+              </div>
+              <h3 class="article__title">Гора Карман-Курык</h3>
+              <p class="article__location">Моркинский район, д. Абдаево</p>
+            </a>
+          </li>
+          <li class="swiper-slide guide__item articles__item article">
+            <a class="articles__item-link" href="#!">
+              <div class="article__img-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/guide/image4-690@1x.webp 1x,
+                    ./img/guide/image4-690@2x.webp 2x,
+                    ./img/guide/image4-690@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/guide/image4-690@1x.png 1x,
+                    ./img/guide/image4-690@2x.png 2x,
+                    ./img/guide/image4-690@3x.png 3x">
+                  <img src="./img/guide/image4.png" alt="Ботанический сад-институт">
+                </picture>
+              </div>
+              <h3 class="article__title">Ботанический сад-институт</h3>
+              <p class="article__location">г. Йошкар-Ола, ул. Мира, 2Б</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="guide__btn-next swiper-button-next">
+        <svg class="icon" width="28px" height="18px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+      <div class="guide__btn-prev swiper-button-prev">
+        <svg class="icon" width="28px" height="18px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <p class="page__link-more"><a href="#!">Посмотреть всё</a></p>
+  </div>
+</section>
+
+      <section class="partners page__section">
+  <div class="page__wrap">
+    <h2 class="page__subtitle" data-foo="Наши партнеры">Наши партнеры</h2>
+    <div class="partners__slider-wrap">
+      <div class="swiper partners__swiper">
+        <ul class="swiper-wrapper partners__list">
+          <li class="swiper-slide partners__item">
+            <a class="partners__item-link" href="#!">
+              <div class="partners__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/partners/culturerf-400@1x.webp 1x,
+                    ./img/partners/culturerf-400@2x.webp 2x,
+                    ./img/partners/culturerf-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/partners/culturerf-400@1x.png 1x,
+                    ./img/partners/culturerf-400@2x.png 2x,
+                    ./img/partners/culturerf-400@3x.png 3x">
+                  <img src="./img/partners/culturerf.png" alt="Культура.РФ">
+                </picture>
+                <h3 class="visually-hidden">Культура.РФ</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide partners__item">
+            <a class="partners__item-link" href="#!">
+              <div class="partners__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/partners/pushkincard-400@1x.webp 1x,
+                    ./img/partners/pushkincard-400@2x.webp 2x,
+                    ./img/partners/pushkincard-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/partners/pushkincard-400@1x.png 1x,
+                    ./img/partners/pushkincard-400@2x.png 2x,
+                    ./img/partners/pushkincard-400@3x.png 3x">
+                  <img src="./img/partners/pushkincard.png" alt="Пушкинская карта">
+                </picture>
+                <h3 class="visually-hidden">Пушкинская карта</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide partners__item">
+            <a class="partners__item-link" href="#!">
+              <div class="partners__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/partners/mincultrf-400@1x.webp 1x,
+                    ./img/partners/mincultrf-400@2x.webp 2x,
+                    ./img/partners/mincultrf-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/partners/mincultrf-400@1x.png 1x,
+                    ./img/partners/mincultrf-400@2x.png 2x,
+                    ./img/partners/mincultrf-400@3x.png 3x">
+                  <img src="./img/partners/mincultrf.png" alt="Министерство культуры Российской Федерации">
+                </picture>
+                <h3 class="visually-hidden">Министерство культуры Российской Федерации</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide partners__item">
+            <a class="partners__item-link" href="#!">
+              <div class="partners__item-wrap">
+                <picture>
+                  <source type="image/webp" srcset="
+                    ./img/partners/flagrme-400@1x.webp 1x,
+                    ./img/partners/flagrme-400@2x.webp 2x,
+                    ./img/partners/flagrme-400@3x.webp 3x">
+                  <source type="image/jpeg" srcset="
+                    ./img/partners/flagrme-400@1x.png 1x,
+                    ./img/partners/flagrme-400@2x.png 2x,
+                    ./img/partners/flagrme-400@3x.png 3x">
+                  <img src="./img/partners/flagrme.png" alt="Администрация">
+                </picture>
+                <h3 class="visually-hidden">Администрация</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="partners__btn-next swiper-button-next">
+        <svg class="icon" width="15px" height="15px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+      <div class="partners__btn-prev swiper-button-prev">
+        <svg class="icon" width="28px" height="18px">
+          <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <p class="page__link-up">
+        <a href="#!">
+          <svg class="icon" width="28px" height="18px">
+            <use class="icon__symbol" xlink:href="#icon-arrow"></use>
+          </svg>
+          Наверх
+        </a>
+      </p>
+    </main>
+    <footer class="main-footer">
+  <div class="main-footer__wrap">
+
+    <p class="logo">Культура <span>Марий Эл</span></p>
+
+    <ul class="main-footer__contacts">
+      <li>Редакция: <a href="tel:+79876543210">+7 (987) 654 32 10</a></li>
+      <li><a href="mailto:mari.culture@mail.ru">mari.culture@mail.ru</a></li>
+    </ul>
+    <p class="main-footer__about">
+      Проект «Культура Марий Эл» Министерства культуры, печати и по делам национальностей РМЭ
+    </p>
+
+    <nav class="main-footer__menu">
+      <ul>
+        <li><a href="#!">О проекте</a></li>
+        <li><a href="#!">Партнеры</a></li>
+        <li><a href="#!">Контакты</a></li>
+      </ul>
+
+
+      <ul>
+        <li><a href="#!">Музеи</a></li>
+        <li><a href="#!">Театры</a></li>
+        <li><a href="#!">Музыка</a></li>
+        <li><a href="#!">Кино</a></li>
+      </ul>
+
+
+
+      <ul>
+        <li><a href="#!">Наследие. Традиции</a></li>
+        <li><a href="#!">Гуманитарные науки</a></li>
+        <li><a href="#!">Искусство</a></li>
+        <li><a href="#!">Гостеприимство</a></li>
+        <li><a href="#!">Креативные индустрии</a></li>
+        <li><a href="#!">Образование в культуре</a></li>
+        <li><a href="#!">Добровольчество</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="main-footer__right-column">
+      <section class="social">
+  <h2 class="social__title">Мы в соцсетях</h2>
+  <ul class="social__list">
+    <li class="social__item social__item--vk">
+      <a class="social__item-link" href="#!">
+        <svg class="icon" width="16px" height="10">
+          <use class="icon__symbol" xlink:href="#icon-vk"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item social__item--youtube">
+      <a class="social__item-link" href="#!">
+        <svg class="icon" width="16px" height="12px">
+          <use class="icon__symbol" xlink:href="#icon-youtube"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</section>
+
+      <p class="age-limit">6</p>
+    </div>
+
+  </div>
+</footer>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-slider.js"></script>
+  </body>
+</html>

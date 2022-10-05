@@ -492,6 +492,10 @@ img {
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 1em;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (min-width: 768px) {
   .page--index .page__subtitle {
@@ -707,6 +711,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 .intro__image-col,
 .intro__text-col {
@@ -819,6 +824,12 @@ img {
   color: inherit;
   text-decoration: none;
 }
+.page--index .brands__text {
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
 .page--index .brands__title {
   margin-bottom: 0.25em;
 }
@@ -826,6 +837,12 @@ img {
   .page--index .brands__title {
     margin-bottom: 0.87rem;
   }
+}
+.page--index .brands__item {
+  -webkit-animation: flipInX;
+          animation: flipInX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .brands__list .brand__title {
   font-size: 16em;
@@ -1747,8 +1764,8 @@ img {
 @media (min-width: 768px) {
   .app__img--smrt2 {
     width: 24.23%;
-    left: 37%;
-    bottom: 13%;
+    left: 37.7%;
+    bottom: 15%;
   }
 }
 .app__header {

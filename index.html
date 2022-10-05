@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Название страницы</title>
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,7 +22,10 @@
     <header class="main-header">
   <div class="main-header__nav">
     <nav class="main-nav">
-  <p class="logo">Культура <span>Марий Эл</span></p>
+  <div class="wow animate__animated animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="5s">
+    <p class="logo">Культура <span>Марий Эл</span></p>
+
+  </div>
 
   <button class="burger-button" type="button" aria-label="Открыть меню">
   <span></span>
@@ -121,19 +125,22 @@
   </div>
   <div class="intro__text-col">
     <div class="intro__text-col-wrap">
-      <p class="logo">Культура <span>Марий Эл</span></p>
+      <div class="wow animate__animated animate__fadeInRight">
+        <p class="logo">Культура <span>Марий Эл</span></p>
 
-      <p>Анонсы, интервью, все самое актуальное о культурной жизни Республики</p>
+      </div>
+
+      <p class="wow animate__animated animate__fadeInRight">Анонсы, интервью, все самое актуальное о культурной жизни Республики</p>
     </div>
   </div>
 </section>
 
       <section class="brands page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle brands__title" data-foo="Культурные бренды">Культурные бренды</h2>
-    <p class="brands__text">Откройте для себя уникальные достопримечтальности нашего региона</p>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle brands__title" data-foo="Культурные бренды">Культурные бренды</h2>
+    <p class="wow brands__text">Откройте для себя уникальные достопримечтальности нашего региона</p>
     <ul class="brands__list">
-      <li class="brands__item brand">
+      <li class="wow brands__item brand">
         <a class="brands__item-link" href="#!">
           <picture>
             <source type="image/webp" srcset="
@@ -149,7 +156,7 @@
           <h3 class="brand__title">Замок Шереметева</h3>
         </a>
       </li>
-      <li class="brands__item brand">
+      <li class="wow brands__item brand">
         <a class="brands__item-link" href="#!">
           <picture>
             <source type="image/webp" srcset="
@@ -165,7 +172,7 @@
           <h3 class="brand__title">12 апостолов</h3>
         </a>
       </li>
-      <li class="brands__item brand">
+      <li class="wow brands__item brand">
         <a class="brands__item-link" href="#!">
           <picture>
             <source type="image/webp" srcset="
@@ -181,7 +188,7 @@
           <h3 class="brand__title">Балет</h3>
         </a>
       </li>
-      <li class="brands__item brand">
+      <li class="wow brands__item brand">
         <a class="brands__item-link" href="#!">
           <picture>
             <source type="image/webp" srcset="
@@ -197,7 +204,7 @@
           <h3 class="brand__title">марийская вышивка</h3>
         </a>
       </li>
-      <li class="brands__item brand">
+      <li class="wow brands__item brand">
         <a class="brands__item-link" href="#!">
           <picture>
             <source type="image/webp" srcset="
@@ -219,7 +226,7 @@
 
       <section class="events articles page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle" data-foo="куда сходить?">куда сходить?</h2>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle" data-foo="куда сходить?">куда сходить?</h2>
     <ul class="articles__list">
       <li class="articles__item articles__item--main article">
         <a class="articles__item-link" href="#!">
@@ -338,7 +345,7 @@
 
       <section class="projects page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle" data-foo="Спецпроекты">Спецпроекты</h2>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle wow animate__animated animate__fadeInRight" data-foo="Спецпроекты">Спецпроекты</h2>
     <div class="projects__slider-wrap">
       <div class="swiper projects__swiper">
         <ul class="swiper-wrapper projects__list">
@@ -487,7 +494,7 @@
 
       <section class="first-person page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle" data-foo="От первого лица">От первого лица</h2>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle" data-foo="От первого лица">От первого лица</h2>
     <ul class="articles__list">
       <li class="articles__item articles__item--main article">
         <a class="articles__item-link" href="#!">
@@ -518,7 +525,7 @@
 
       <section class="team page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle" data-foo="Команда культуры">Команда культуры</h2>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle" data-foo="Команда культуры">Команда культуры</h2>
     <div class="team__slider-wrap">
       <div class="swiper team__swiper">
         <ul class="swiper-wrapper team__list">
@@ -613,7 +620,7 @@
 
       <section class="app page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle" data-foo="Я здесь: Марий Эл">Я здесь: Марий Эл</h2>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle" data-foo="Я здесь: Марий Эл">Я здесь: Марий Эл</h2>
     <div class="app__column-wrap">
       <div class="app__column-content">
         <div class="app__header">
@@ -636,7 +643,7 @@
                     ./img/app/route-945@1x.png 1x,
                     ./img/app/route-945@2x.png 2x,
                     ./img/app/route-945@3x.png 3x">
-          <img class="app__img app__img--route" src="./img/app/route.png">
+          <img class="app__img app__img--route wow animate__animated animate__flipInY animate__delay-2s" src="./img/app/route.png">
         </picture>
         <picture>
           <source type="image/webp" srcset="
@@ -647,7 +654,7 @@
                     ./img/app/smrt2-415@1x.png 1x,
                     ./img/app/smrt2-415@2x.png 2x,
                     ./img/app/smrt2-415@3x.png 3x">
-          <img class="app__img app__img--smrt2" src="./img/app/smrt2.png">
+          <img class="app__img app__img--smrt2 wow animate__animated animate__fadeInTopRight" src="./img/app/smrt2.png">
         </picture>
         <picture>
           <source type="image/webp" srcset="
@@ -658,7 +665,7 @@
                     ./img/app/smrt1-390@1x.png 1x,
                     ./img/app/smrt1-390@2x.png 2x,
                     ./img/app/smrt1-390@3x.png 3x">
-          <img class="app__img app__img--smrt1" src="./img/app/smrt1.png">
+          <img class="app__img app__img--smrt1 wow animate__animated animate__fadeInBottomLeft animate__delay-1s" src="./img/app/smrt1.png">
         </picture>
       </div>
     </div>
@@ -669,7 +676,7 @@
 
       <section class="guide page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle" data-foo="Заповедная Марий Эл: твой гид">Заповедная Марий Эл: твой гид</h2>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle" data-foo="Заповедная Марий Эл: твой гид">Заповедная Марий Эл: твой гид</h2>
     <div class="guide__slider-wrap">
       <div class="swiper guide__swiper">
         <ul class="swiper-wrapper guide__list articles__list">
@@ -768,7 +775,7 @@
 
       <section class="partners page__section">
   <div class="page__wrap">
-    <h2 class="page__subtitle" data-foo="Наши партнеры">Наши партнеры</h2>
+    <h2 class="wow animate__animated animate__fadeInLeft page__subtitle" data-foo="Наши партнеры">Наши партнеры</h2>
     <div class="partners__slider-wrap">
       <div class="swiper partners__swiper">
         <ul class="swiper-wrapper partners__list">
@@ -938,9 +945,8 @@
   </div>
 </footer>
 
-
+    <script src="js/wow.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/swiper-slider.js"></script>
   </body>
 </html>

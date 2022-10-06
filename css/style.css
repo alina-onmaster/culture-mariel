@@ -214,8 +214,8 @@ img {
   position: absolute;
   -webkit-transform: translateY(-50%) rotate(-90deg);
           transform: translateY(-50%) rotate(-90deg);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(100%, #ffffff), to(#ffffff)), url("../img/logo/bg-logo.png");
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%, #ffffff 100%), url("../img/logo/bg-logo.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(100%, #ffffff), to(#ffffff)), url("../img/logo/bg-logo.webp");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%, #ffffff 100%), url("../img/logo/bg-logo.webp");
   background-size: contain;
   opacity: 0.2;
   z-index: -1;
@@ -1655,7 +1655,7 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: url("../img/app/bg2.png") no-repeat, url("../img/app/bg1.png") no-repeat;
+  background: url("../img/app/bg2.jpg") no-repeat, url("../img/app/bg1.jpg") no-repeat;
   background-size: 74% 68%,
       55% 66%;
   background-position: bottom -18% left -132%, top 33% right -72%;
@@ -1911,10 +1911,10 @@ img {
   }
 }
 .app__btn-download--ios {
-  background-image: url("../img/app/download-appstore.png");
+  background-image: url("../img/app/download-appstore.jpg");
 }
 .app__btn-download--android {
-  background-image: url("../img/app/download-googleplay.png");
+  background-image: url("../img/app/download-googleplay.jpg");
 }
 .guide .page__subtitle::before {
   width: 150vw;

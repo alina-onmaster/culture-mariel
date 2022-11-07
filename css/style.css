@@ -2376,12 +2376,14 @@ img {
 .articles__item-link:hover .article__img-wrap::before,
 .articles__item-link:focus .article__img-wrap::before {
   height: 100%;
-  background: rgba(120, 198, 128, 0.6);
+  background: rgba(249, 193, 129, 0.6);
 }
 .articles__item-link:hover .article__img-wrap img,
 .articles__item-link:focus .article__img-wrap img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 .articles__item-link:hover .article__info,
 .articles__item-link:focus .article__info {

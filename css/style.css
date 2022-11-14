@@ -1818,12 +1818,6 @@ img {
   color: inherit;
   text-decoration: none;
 }
-.page--index .brands__text {
-  -webkit-animation: fadeInRight;
-          animation: fadeInRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
 .page--index .brands__title {
   margin-bottom: 0.25em;
 }
@@ -1831,12 +1825,6 @@ img {
   .page--index .brands__title {
     margin-bottom: 0.87rem;
   }
-}
-.page--index .brands__item {
-  -webkit-animation: flipInX;
-          animation: flipInX;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 .page__revers-wrap section.brands {
   -webkit-box-ordinal-group: 3;
@@ -2376,14 +2364,12 @@ img {
 .articles__item-link:hover .article__img-wrap::before,
 .articles__item-link:focus .article__img-wrap::before {
   height: 100%;
-  background: rgba(249, 193, 129, 0.6);
+  background: rgba(255, 255, 255, 0.45);
 }
 .articles__item-link:hover .article__img-wrap img,
 .articles__item-link:focus .article__img-wrap img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 .articles__item-link:hover .article__info,
 .articles__item-link:focus .article__info {

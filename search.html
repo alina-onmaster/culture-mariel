@@ -2,14 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Я здесь: Марий Эл</title>
+  <title>Поиск по сайту</title>
   <link rel="stylesheet" href="./css/animate.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="page page--inner" id="top">
+<body class="page page--inner page--projects" id="top">
 <div style="display:none">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow" viewBox="0 0 28 18">
 <path class="icon__color-element" fill-rule="evenodd" clip-rule="evenodd" d="M0.875 8.99996C0.875 8.75132 0.973772 8.51287 1.14959 8.33705C1.3254 8.16124 1.56386 8.06246 1.8125 8.06246H23.9244L18.0238 2.16371C17.8477 1.98768 17.7488 1.74892 17.7488 1.49996C17.7488 1.25101 17.8477 1.01225 18.0238 0.836213C18.1998 0.660176 18.4385 0.561279 18.6875 0.561279C18.9365 0.561279 19.1752 0.660176 19.3513 0.836213L26.8513 8.33621C26.9386 8.4233 27.0078 8.52675 27.0551 8.64065C27.1024 8.75455 27.1267 8.87665 27.1267 8.99996C27.1267 9.12328 27.1024 9.24538 27.0551 9.35928C27.0078 9.47317 26.9386 9.57663 26.8513 9.66371L19.3513 17.1637C19.1752 17.3398 18.9365 17.4386 18.6875 17.4386C18.4385 17.4386 18.1998 17.3398 18.0238 17.1637C17.8477 16.9877 17.7488 16.7489 17.7488 16.5C17.7488 16.251 17.8477 16.0122 18.0238 15.8362L23.9244 9.93746H1.8125C1.56386 9.93746 1.3254 9.83869 1.14959 9.66288C0.973772 9.48706 0.875 9.2486 0.875 8.99996Z" fill="#000000"></path>
@@ -86,222 +85,176 @@
 
 
 <main>
-  <h1 class="visually-hidden">Приложение "Я здесь: Марий Эл"</h1>
-  <div class="breadcrumbs">
-    <div class="page__wrap">
-      <ul class="breadcrumbs__list">
-        <li>
-          <a href="/" title="Главная">
-            <svg class="icon" width="20px" height="21px">
-              <use class="icon__symbol" xlink:href="#icon-home"></use>
-            </svg>
-          </a>
-        </li>
-        <li>Приложение "Я здесь: Марий Эл"</li>
-      </ul>
-    </div>
+  <h1 class="visually-hidden">Поиск по сайту</h1>
+  <section class="search-result page__section">
+  <div class="page__wrap">
+    <form class="search__form">
+      <p class="search__form-text">Вы искали:</p>
+      <div class="search__form-fieldwrap">
+        <input class="search__input" type="search" placeholder="Поиск по культурной жизни Марий Эл" value="черемисы">
+      </div>
+      <button class="search__btn-clear" aria-label="Очистить поиск"></button>
+    </form>
+    <form class="form search-result__filter-form">
+      <div class="search-result__filter-select">
+        <div class="form__fieldwrap">
+          <select name="search-result-categories">
+            <option value="search-result-category1" selected="">Везде (6)</option>
+            <option value="search-result-category2">Куда сходить (2)</option>
+            <option value="search-result-category3">От первого лица (2)</option>
+            <option value="search-result-category4">Спецпроекты (1)</option>
+            <option value="search-result-category5">Я здесь: Марий Эл (1)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="search-result__filter-radio-buttons">
+        <div class="form__fieldwrap">
+          <input type="radio" id="search-result-category1" name="search-result-category" checked="">
+          <label for="search-result-category1">Везде (6)</label>
+        </div>
+        <div class="form__fieldwrap">
+          <input type="radio" id="search-result-category2" name="search-result-category">
+          <label for="search-result-category2">Куда сходить (2)</label>
+        </div>
+        <div class="form__fieldwrap">
+          <input type="radio" id="search-result-category3" name="search-result-category">
+          <label for="search-result-category3">От первого лица (2)</label>
+        </div>
+        <div class="form__fieldwrap">
+          <input type="radio" id="search-result-category4" name="search-result-category">
+          <label for="search-result-category4">Спецпроекты (1)</label>
+        </div>
+        <div class="form__fieldwrap">
+          <input type="radio" id="search-result-category5" name="search-result-category">
+          <label for="search-result-category5">Я здесь: Марий Эл (1)</label>
+        </div>
+      </div>
+    </form>
+    <ul class="search-result__list">
+      <li class="search-result__item">
+        <a class="search-result__item-link" href="#">
+          <picture>
+            <source type="image/webp" srcset="
+                    ./img/search/img1-800@1x.webp 1x,
+                    ./img/search/img1-800@2x.webp 2x,
+                    ./img/search/img1-800@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+                    ./img/search/img1-800@1x.jpg 1x,
+                    ./img/search/img1-800@2x.jpg 2x,
+                    ./img/search/img1-800@3x.jpg 3x">
+            <img class="search-result__item-img" width="320" src="./img/search/img1-800@1x.jpg" alt="Пеледыш пайрем - праздник цветов">
+          </picture>
+          <div class="search-result__item-info">
+            <p class="search-result__item-category">Куда сходить / Праздник</p>
+            <h2 class="search-result__item-title">Пеледыш пайрем - праздник цветов</h2>
+          </div>
+
+        </a>
+      </li>
+      <li class="search-result__item">
+        <a class="search-result__item-link" href="#">
+          <picture>
+            <source type="image/webp" srcset="
+                    ./img/search/img2-800@1x.webp 1x,
+                    ./img/search/img2-800@2x.webp 2x,
+                    ./img/search/img2-800@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+                    ./img/search/img2-800@1x.jpg 1x,
+                    ./img/search/img2-800@2x.jpg 2x,
+                    ./img/search/img2-800@3x.jpg 3x">
+            <img class="search-result__item-img" src="./img/search/img2-800@1x.jpg" alt="Спектакль “Югорно”">
+          </picture>
+          <div class="search-result__item-info">
+            <p class="search-result__item-category">Куда сходить / Спектакль</p>
+            <h2 class="search-result__item-title">Спектакль “Югорно”</h2>
+          </div>
+
+        </a>
+      </li>
+      <li class="search-result__item">
+        <a class="search-result__item-link" href="#">
+          <picture>
+            <source type="image/webp" srcset="
+                    ./img/search/img3-800@1x.webp 1x,
+                    ./img/search/img3-800@2x.webp 2x,
+                    ./img/search/img3-800@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+                    ./img/search/img3-800@1x.jpg 1x,
+                    ./img/search/img3-800@2x.jpg 2x,
+                    ./img/search/img3-800@3x.jpg 3x">
+            <img class="search-result__item-img" src="./img/search/img3-800@1x.jpg" alt="Кто такие марийцы">
+          </picture>
+          <div class="search-result__item-info">
+            <p class="search-result__item-category">От первого лица</p>
+            <h2 class="search-result__item-title">Кто такие марийцы</h2>
+          </div>
+
+        </a>
+      </li>
+      <li class="search-result__item">
+        <a class="search-result__item-link" href="#">
+          <picture>
+            <source type="image/webp" srcset="
+                    ./img/search/img4-800@1x.webp 1x,
+                    ./img/search/img4-800@2x.webp 2x,
+                    ./img/search/img4-800@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+                    ./img/search/img4-800@1x.jpg 1x,
+                    ./img/search/img4-800@2x.jpg 2x,
+                    ./img/search/img4-800@3x.jpg 3x">
+            <img class="search-result__item-img" src="./img/search/img4-800@1x.jpg" alt="Языческие моления">
+          </picture>
+          <div class="search-result__item-info">
+            <p class="search-result__item-category">От первого лица</p>
+            <h2 class="search-result__item-title">Языческие моления</h2>
+          </div>
+
+        </a>
+      </li>
+      <li class="search-result__item">
+        <a class="search-result__item-link" href="#">
+          <picture>
+            <source type="image/webp" srcset="
+                    ./img/search/img5-800@1x.webp 1x,
+                    ./img/search/img5-800@2x.webp 2x,
+                    ./img/search/img5-800@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+                    ./img/search/img5-800@1x.jpg 1x,
+                    ./img/search/img5-800@2x.jpg 2x,
+                    ./img/search/img5-800@3x.jpg 3x">
+            <img class="search-result__item-img" src="./img/search/img5-800@1x.jpg" alt="Свадебные обряды марийцев">
+          </picture>
+          <div class="search-result__item-info">
+            <p class="search-result__item-category">Спецпроекты / Наследие. Традиции</p>
+            <h2 class="search-result__item-title">Свадебные обряды марийцев</h2>
+          </div>
+
+        </a>
+      </li>
+      <li class="search-result__item">
+        <a class="search-result__item-link" href="#">
+          <picture>
+            <source type="image/webp" srcset="
+                    ./img/search/img6-800@1x.webp 1x,
+                    ./img/search/img6-800@2x.webp 2x,
+                    ./img/search/img6-800@3x.webp 3x">
+            <source type="image/jpeg" srcset="
+                    ./img/search/img6-800@1x.jpg 1x,
+                    ./img/search/img6-800@2x.jpg 2x,
+                    ./img/search/img6-800@3x.jpg 3x">
+            <img class="search-result__item-img" src="./img/search/img6-800@1x.jpg" alt="Гора Карман-Курык">
+          </picture>
+          <div class="search-result__item-info">
+            <p class="search-result__item-category">Я здесь: Марий Эл / Места</p>
+            <h2 class="search-result__item-title">Гора Карман-Курыкв</h2>
+          </div>
+
+        </a>
+      </li>
+    </ul>
   </div>
-
-  <div class="app">
-  <section class="app__intro page__section">
-    <h2 class="visually-hidden">О приложении</h2>
-    <div class="page__wrap">
-      <div class="app__column-wrap">
-        <div class="app__column-content">
-          <div class="app__header">
-            <img class="app__logo" src="./img/app/logo.png" width="60" height="60">
-            <p class="app__name">Мобильное приложение <b>Я здесь: Марий Эл</b></p>
-          </div>
-          <p class="app__about">Гид для гостей и жителей республики. Путешествуйте, не сидите дома! </p>
-          <div class="app__btn-wrap">
-            <a class="app__btn-download app__btn-download--ios" href="!#"><span class="visually-hidden">Скачать приложение с App Store</span></a>
-            <a class="app__btn-download app__btn-download--android" href="!#"><span class="visually-hidden">Скачать приложение с Google Play</span></a>
-          </div>
-        </div>
-        <div class="app__column-img">
-          <picture>
-            <source type="image/webp" srcset="
-                    ./img/app/route-945@1x.webp 1x,
-                    ./img/app/route-945@2x.webp 2x,
-                    ./img/app/route-945@3x.webp 3x">
-            <source type="image/jpeg" srcset="
-                    ./img/app/route-945@1x.png 1x,
-                    ./img/app/route-945@2x.png 2x,
-                    ./img/app/route-945@3x.png 3x">
-            <img class="app__img app__img--route wow animate__animated animate__flipInY animate__delay-1s" src="./img/app/route-945@1x.png">
-          </picture>
-          <picture>
-            <source type="image/webp" srcset="
-                    ./img/app/smrt2-415@1x.webp 1x,
-                    ./img/app/smrt2-415@2x.webp 2x,
-                    ./img/app/smrt2-415@3x.webp 3x">
-            <source type="image/jpeg" srcset="
-                    ./img/app/smrt2-415@1x.png 1x,
-                    ./img/app/smrt2-415@2x.png 2x,
-                    ./img/app/smrt2-415@3x.png 3x">
-            <img class="app__img app__img--smrt2 wow animate__animated animate__fadeInTopRight" src="./img/app/smrt2-415@1x.png">
-          </picture>
-          <picture>
-            <source type="image/webp" srcset="
-                    ./img/app/smrt1-390@1x.webp 1x,
-                    ./img/app/smrt1-390@2x.webp 2x,
-                    ./img/app/smrt1-390@3x.webp 3x">
-            <source type="image/jpeg" srcset="
-                    ./img/app/smrt1-390@1x.png 1x,
-                    ./img/app/smrt1-390@2x.png 2x,
-                    ./img/app/smrt1-390@3x.png 3x">
-            <img class="app__img app__img--smrt1 wow animate__animated animate__fadeInBottomLeft" src="./img/app/smrt1-390@1x.png">
-          </picture>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="app__info-section">
-    <h2 class="visually-hidden">Информация</h2>
-    <div class="page__wrap">
-      <div class="app__info">
-        <b>Приложение «Я здесь. Марий Эл» создано с большой любовью </b>
-        <p>Ни один поисковый сервис не собирал информацию о культурных объектах заповедной Марий Эл с таким трепетом.</p>
-      </div>
-    </div>
-  </section>
-  <section class="app__functional page__section">
-    <div class="page__wrap">
-      <div class="app__functional-wrap">
-        <h3 class="page__subtitle">Возможности  приложения</h3>
-        <div class="app__functional-img-wrap wow animate__animated animate__fadeInUp">
-          <picture>
-            <source type="image/webp" srcset="
-                    ./img/app/screen1-427@1x.webp 1x,
-                    ./img/app/screen1-427@2x.webp 2x,
-                    ./img/app/screen1-427@3x.webp 3x">
-            <source type="image/jpeg" srcset="
-                    ./img/app/screen1-427@1x.png 1x,
-                    ./img/app/screen1-427@2x.png 2x,
-                    ./img/app/screen1-427@3x.png 3x">
-            <img src="./img/app/screen1-427@1x.png">
-          </picture>
-
-        </div>
-        <div class="tabs">
-          <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked="">
-          <label for="tab-btn-1">Места</label>
-          <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-          <label for="tab-btn-2">Маршруты</label>
-          <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-          <label for="tab-btn-3">Карта</label>
-          <input type="radio" name="tab-btn" id="tab-btn-4" value="">
-          <label for="tab-btn-4">Избранное</label>
-          <div class="tabs__content" id="content-1">
-            <p>Марий Эл сочетает в себе, казалось бы, несочетаемое, здесь сохранились многие народные традиции, удивительная природа, а столица при этом похожа на настоящий кусочек Европы.</p>
-            <p>Приложение поможет тебе изучить интересные места, достопримечательности, объекты культурного наследия Йошкар-Олы и Марий Эл. </p>
-          </div>
-          <div class="tabs__content" id="content-2">
-            Содержимое 2...
-          </div>
-          <div class="tabs__content" id="content-3">
-            Содержимое 3...
-          </div>
-          <div class="tabs__content" id="content-4">
-            Содержимое 4...
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-  <section class="app__slider-section">
-    <h2 class="visually-hidden">Особенности приложения</h2>
-    <div class="page__wrap">
-      <div class="app__slider-wrap">
-        <div class="swiper app__slider-container">
-          <ul class="swiper-wrapper app__slider-list">
-            <li class="swiper-slide wow animate__animated animate__flipInX animate__delay-1s">
-              <picture>
-                <source type="image/webp" srcset="
-                    ./img/app/slide1-370@1x.webp 1x,
-                    ./img/app/slide1-370@2x.webp 2x,
-                    ./img/app/slide1-370@3x.webp 3x">
-                <source type="image/jpeg" srcset="
-                    ./img/app/slide1-370@1x.jpg 1x,
-                    ./img/app/slide1-370@2x.jpg 2x,
-                    ./img/app/slide1-370@3x.jpg 3x">
-                <img class="app__slide-img" src="./img/app/slide1-370@1x.jpg">
-              </picture>
-            </li>
-            <li class="swiper-slide wow animate__animated animate__flipInX animate__delay-1s">
-              <picture>
-                <source type="image/webp" srcset="
-                    ./img/app/slide2-370@1x.webp 1x,
-                    ./img/app/slide2-370@2x.webp 2x,
-                    ./img/app/slide2-370@3x.webp 3x">
-                <source type="image/jpeg" srcset="
-                    ./img/app/slide2-370@1x.jpg 1x,
-                    ./img/app/slide2-370@2x.jpg 2x,
-                    ./img/app/slide2-370@3x.jpg 3x">
-                <img class="app__slide-img" src="./img/app/slide2-370@1x.jpg">
-              </picture>
-            </li>
-            <li class="swiper-slide wow animate__animated animate__flipInX animate__delay-1s">
-              <picture>
-                <source type="image/webp" srcset="
-                    ./img/app/slide3-370@1x.webp 1x,
-                    ./img/app/slide3-370@2x.webp 2x,
-                    ./img/app/slide3-370@3x.webp 3x">
-                <source type="image/jpeg" srcset="
-                    ./img/app/slide3-370@1x.jpg 1x,
-                    ./img/app/slide3-370@2x.jpg 2x,
-                    ./img/app/slide3-370@3x.jpg 3x">
-                <img class="app__slide-img" src="./img/app/slide3-370@1x.jpg">
-              </picture>
-            </li>
-          </ul>
-        </div>
-        <div class="app-slider__btn-next swiper-button-next">
-          <svg class="icon" width="28px" height="18px">
-            <use class="icon__symbol" xlink:href="#icon-arrow"></use>
-          </svg>
-        </div>
-        <div class="app-slider__btn-prev swiper-button-prev">
-          <svg class="icon" width="28px" height="18px">
-            <use class="icon__symbol" xlink:href="#icon-arrow"></use>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="app__form page__section">
-    <div class="page__wrap">
-      <h2 class="wow animate__animated animate__fadeInLeft page__subtitle" data-foo="Станьте партнером">Станьте партнером</h2>
-      <div class="app__form-text">
-        <p>Если вы ведете бизнес, связанный с туризмом и оказываете услуги на территории республики Марий Эл, мы с удовольствием рассмотрим ваш продукт для включения в партнерскую сеть приложения.</p>
-
-      </div>
-      <form class="form">
-        <div class="form__fieldwrap form__fieldwrap--name">
-          <input type="text" id="user-name" placeholder="Имя" required="">
-          <label class="visually-hidden" for="user-name">Имя</label>
-        </div>
-        <div class="form__fieldwrap form__fieldwrap--phone">
-          <input type="tel" id="user-phone" placeholder="Телефон" required="">
-          <label class="visually-hidden" for="user-phone">Телефон</label>
-        </div>
-        <div class="form__fieldwrap form__fieldwrap--email">
-          <input type="email" id="user-email" placeholder="E-mail">
-          <label class="visually-hidden" for="user-email">E-mail</label>
-        </div>
-        <div class="form__fieldwrap form__fieldwrap--message">
-          <textarea id="message" rows="1" placeholder="Сообщение" style="width: 100%;"></textarea>
-        </div>
-        <button class="form__btn-submit" type="submit">Отправить заявку</button>
-        <p class="app__form-note">*Нажимая на кнопку, вы даёте согласие на обработку личных данных</p>
-      </form>
-
-    </div>
-  </section>
-</div>
-
+</section>
 
 </main>
 
@@ -387,9 +340,7 @@
 </footer>
 
 <script src="js/wow.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/sliders.js"></script>
-<script src="js/app-slider.js"></script>
 </body>
 </html>
